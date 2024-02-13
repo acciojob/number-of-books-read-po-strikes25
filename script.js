@@ -21,7 +21,7 @@ const numberOfBooksRead = () => {
   let count = 0;
   for(let book in books) {
 	  for(let key of book) {
-		  if(key == 'readingStatus' && key == true) {
+		  if(key == 'readingStatus' && key) {
 			  count++;
 		  }
 	  }
